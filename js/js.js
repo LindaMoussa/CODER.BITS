@@ -35,3 +35,31 @@ window.setInterval(function () {
     }
     
 }, 5);
+
+$(document).ready(function () {
+    $("#home").click(function () {
+            $('html, body').animate({
+                scrollTop: $(".bgimg").offset().top
+            }, 1000)
+        }),
+        $("#about").click(function () {
+            $('html, body').animate({
+                scrollTop: $(".about-me").offset().top
+            }, 1000)
+        }),
+        $("#work").click(function () {
+            $('html, body').animate({
+                scrollTop: $(".whatido").offset().top
+            }, 1000)
+        }),
+        $("#portfolio").click(function () {
+            $('html, body').animate({
+                scrollTop: $(".my-portfolio").offset().top
+            }, 1000)
+        }),
+        $("#hireMe").click(function () {
+            $('html, body').animate({
+                scrollTop: $(".contactus").offset().top
+            }, 1000)
+        })
+});
