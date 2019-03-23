@@ -1,27 +1,32 @@
-body{
+body {
     font-family: 'Poppins', Helvetica, arial, sans-serif;
     transition-timing-function: ease-in-out;
 
 }
-nav a{
+
+nav a {
     font-weight: 600;
     letter-spacing: .8px;
     font-size: 14px;
 }
-a.nav-item.nav-link:hover{
+
+a.nav-item.nav-link:hover {
     color: red !important;
 }
-a.home{
+
+a.home {
     color: red !important;
     border-color: red !important;
 }
-nav span{
-   font-weight: 600;
+
+nav span {
+    font-weight: 600;
     font-size: 18px;
     letter-spacing: 1px;
 }
-.bgimg{
-/*
+
+.bgimg {
+    /*
     background-image: url(images/cover.jpg);
     width: 100vw;
     height: 100vh; 
@@ -29,96 +34,235 @@ nav span{
     background-attachment: fixed;
     */
 }
-.overlay{
-    top:0;
-    left:0;
+
+.overlay {
+    top: 0;
+    left: 0;
     background-color: rgba(240, 45, 50, 0.68);
 }
-.overlay .container{
-    top:30%;
+
+.overlay .container {
+    top: 30%;
 }
-.overlay h1{
+
+.overlay h1 {
     font-size: 58px;
     font-weight: 800;
     letter-spacing: 1px;
     text-shadow: 4px 6px 5px rgba(196, 45, 50, 1);
 }
-.overlay h6{
+
+.overlay h6 {
     font-size: 24px;
     font-weight: 500;
 }
-.overlay button{
+
+.overlay button {
     font-size: 16px;
 }
-.overlay button span{
+
+.overlay button span {
     font-size: 10px;
 }
-.overlay button:hover{
-    color:red !important;
+
+.overlay button:hover {
+    color: red !important;
 }
-.overlay i{
+
+.overlay i {
     bottom: 10%;
-    left:45%;
+    left: 45%;
     font-size: 56px;
     animation-name: arrow;
     animation-direction: reverse;
-    animation-duration:1.5s ;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
-section h2 ,section h4{
+
+section h2,
+section h4 {
     font-size: 35px;
     font-weight: 900;
     color: #444;
 }
-section h4{
+
+section h4 {
     font-size: 30px;
 }
-section h6{
+
+section h6 {
     font-size: 18px;
     font-weight: 500;
     color: #444;
 }
-section p{
+
+section p {
     font-size: 16px;
     font-weight: 300;
     color: #777;
 }
-section li button.btn-outline-dark:hover{
+
+section li button.btn-outline-dark:hover {
     background-color: red !important;
 }
-section ul{
+
+section ul {
     list-style: none;
 }
-.progress{
+
+.progress {
     height: 0.8rem !important;
 }
-h3{
+
+h3 {
     font-size: 30px;
     font-weight: 800;
     color: #444;
 }
-.skills p{
+
+.skills p {
     font-size: 16px;
     font-weight: 300;
     color: #777;
 }
-.progress-sec span{
+
+.progress-sec span {
     font-size: 14px;
     font-weight: 400;
 }
-.whatido i{
+
+.whatido i {
     font-size: 20px;
+    transition: .3s ease;
 }
 
-@keyframes arrow{
-    0%{bottom: 10%;}
-    12.5%{bottom: 9%;}
-    25%{bottom: 8%;}
-    37.5%{bottom: 7%}
-    50%{bottom: 6%;}
-    62.5%{bottom: 7%;}
-    75%{bottom: 8%;}
-    87.5%{bottom: 9%;}
-    100%{bottom: 10%;}    
-    
+.whatido h6 {
+    transition: .3s ease;
+}
+
+.whatido .row .col-md-4:hover i {
+    /*    color: red;*/
+    background-color: #ec3237 !important;
+    color: white !important;
+}
+
+.whatido h3 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.whatido h6,
+.whatido h3,
+.counter h6 {
+    color: #ec3237 !important;
+    letter-spacing: 1px;
+}
+
+.whatido .web-services {
+    margin-bottom: 30px;
+    padding: 20px !important;
+    background-color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 1px 4px rgba(107, 69, 69, 0.050);
+}
+
+.counter {
+    background-image: url(images/project-counter.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.eachcounter,
+.eachcounter h4 {
+    color: white;
+}
+
+.eachcounter h4 {
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 42px;
+}
+.my-portfolio{
+    background-color: #f5f5f5;
+}
+.tabs ul.nav{
+    padding-left: 35%;
+}
+.tabs ul.nav li a{
+    border-radius: 0;
+    display: block;
+    padding: 10px 20px;
+/*    margin-bottom: 30px;*/
+    color: #444444;
+    border: 2px solid #dddddd;
+    font-size: 1em;
+    font-weight: 600;
+}
+.tabs ul.nav li a:active ,.nav-pills .nav-link.active{
+    background-color: #ec3237;
+}
+.tab-content i{
+    background-color: black;
+    border-radius: 50% 50%;
+    color: #fff;
+    bottom: 15%;
+    left: 45%;
+}
+
+@media (max-width:860px) {
+    .overlay h1 {
+        font-size: 18px;
+    }
+    .tabs ul.nav{
+    padding-left: 0;
+        margin: auto;
+}
+    /*
+    .whatido .row{
+        float: none !important;
+        width: 100% !important;
+        margin: auto;
+    }
+*/
+
+}
+
+@keyframes arrow {
+    0% {
+        bottom: 10%;
+    }
+
+    12.5% {
+        bottom: 9%;
+    }
+
+    25% {
+        bottom: 8%;
+    }
+
+    37.5% {
+        bottom: 7%
+    }
+
+    50% {
+        bottom: 6%;
+    }
+
+    62.5% {
+        bottom: 7%;
+    }
+
+    75% {
+        bottom: 8%;
+    }
+
+    87.5% {
+        bottom: 9%;
+    }
+
+    100% {
+        bottom: 10%;
+    }
+
 }
